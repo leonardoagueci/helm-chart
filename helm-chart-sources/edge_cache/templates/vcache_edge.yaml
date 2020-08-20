@@ -33,7 +33,7 @@ spec:
       labels:
         app: vcache-edge
       annotations:
-        k8s.v1.cni.cncf.io/networks: vm-mgmt-net
+        k8s.v1.cni.cncf.io/networks: default/vm-mgmt-net
     spec:
       containers:
       - name: vcache-edge
