@@ -3,12 +3,12 @@ entries:
   edge_cache:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-08-20T09:53:50.261144451+02:00"
+    created: "2020-08-20T10:13:19.005572493+02:00"
     description: A Helm chart for Kubernetes
     digest: bf68cba666fc01c305f004a5e090b98b4857be62f87c9a8c827fe60a85fe7573
     name: edge_cache
     type: application
     urls:
-    - https://github.com/leonardoagueci/helm-chart/edge_cache-0.1.0.tgz
+    - https://leonardoagueci.github.io/helm-chart/helm-chart-sources/edge_cache-0.1.0.tgz
     version: 0.1.0
-generated: "2020-08-20T09:53:50.260160246+02:00"
+generated: "2020-08-20T10:13:19.002482061+02:00"
