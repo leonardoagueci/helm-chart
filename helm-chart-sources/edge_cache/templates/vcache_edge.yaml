@@ -38,7 +38,7 @@ spec:
       containers:
       - name: vcache-edge
         image: leonardoagueci/vcache-edge:test
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         - containerPort: 8888
