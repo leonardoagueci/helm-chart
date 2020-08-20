@@ -1,0 +1,44 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: vcache-edge-service
+spec:
+  selector:
+    app: vcache-edge
+  ports:
+    - name: traffic-server
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    - name: rest-server
+      protocol: TCP
+      port: 8888
+      targetPort: 8888
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vcache-edge-deployment
+  labels:
+    app: vcache-edge
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vcache-edge
+  template:
+    metadata:
+      labels:
+        app: vcache-edge
+      annotations:
+        k8s.v1.cni.cncf.io/networks: vm-mgmt-net
+    spec:
+      containers:
+      - name: vcache-edge
+        image: leonardoagueci/vcache-edge:test
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        - containerPort: 8888
