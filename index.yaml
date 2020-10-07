@@ -3,7 +3,7 @@ entries:
   edge_cache:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-10-07T12:46:30.850695641+02:00"
+    created: "2020-10-07T14:25:53.811522507+02:00"
     description: A Helm chart for Kubernetes
     digest: f18b7b83c65b7ce93366ce8f18eda799c8adba9d760d79e069476bd72692de29
     name: edge_cache
@@ -13,11 +13,11 @@ entries:
   test_function:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-10-07T12:46:30.855997097+02:00"
+    created: "2020-10-07T14:25:53.81231231+02:00"
     description: A Helm chart for Kubernetes
-    digest: dafd9429da496b004bf3d2f2821692ef2ada1e48139db46efff611a0c23d2675
+    digest: 8a5e49e3d8420360c932cfeaece57f05c0b9c25dc181138d5575880de0fd3b88
     name: test_function
     urls:
-    - https://leonardoagueci.github.io/helm-chart/helm-chart-sources/test_function-0.0.1.tgz
-    version: 0.0.1
-generated: "2020-10-07T12:46:30.849582663+02:00"
+    - https://leonardoagueci.github.io/helm-chart/helm-chart-sources/test_function-0.0.2.tgz
+    version: 0.0.2
+generated: "2020-10-07T14:25:53.809153837+02:00"
