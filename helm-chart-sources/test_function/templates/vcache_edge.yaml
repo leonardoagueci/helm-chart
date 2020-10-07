@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-function
+  labels:
+    app: test-function
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-function
+  template:
+    metadata:
+      labels:
+        app: test-function
+    spec:
+      containers:
+      - name: test-function
+        image: leonardoagueci/vcache-edge:test
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        - containerPort: 8888
